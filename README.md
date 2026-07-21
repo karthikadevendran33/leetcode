@@ -17,3 +17,22 @@ This repository contains my solutions to LeetCode problems. It serves as a recor
 ## Notes
 
 Each solution is written with a focus on readability and correctness. As I continue solving problems, this repository will be updated with new solutions and, where applicable, more optimized approaches.
+
+Day 2 - Palindrome Number
+## Problem
+
+Given an integer `x`, return `true` if `x` is a palindrome, and `false` otherwise.
+
+A palindrome number is a number that reads the same forward and backward.
+
+## Approach
+
+The solution uses a mathematical approach to reverse the given integer without converting it into a string.
+
+### Algorithm
+
+1. Store the original value of `x`.
+2. Extract each digit from the number using the modulo operator (`%`).
+3. Build the reversed number by multiplying the current reverse value by 10 and adding the extracted digit.
+4. Compare the reversed number with the original number.
+5. Return `true` if both values are equal; otherwise, return `false`.
