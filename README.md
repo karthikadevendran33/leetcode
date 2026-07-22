@@ -36,3 +36,24 @@ The solution uses a mathematical approach to reverse the given integer without c
 3. Build the reversed number by multiplying the current reverse value by 10 and adding the extracted digit.
 4. Compare the reversed number with the original number.
 5. Return `true` if both values are equal; otherwise, return `false`.
+
+Day 3 - Roman To Intege
+## Problem
+
+This program converts a Roman numeral into its corresponding integer value.
+
+The idea is simple:
+
+1. Store the value of each Roman symbol in a dictionary.
+2. Check each character in the string one by one.
+3. If a smaller value comes before a larger value, subtract it.
+4. Otherwise, add the value.
+5. Return the final answer.
+
+## Complexity
+
+**Time Complexity:** O(n)  
+- We go through the Roman numeral once.
+
+**Space Complexity:** O(1)  
+- The dictionary contains only a fixed number of symbols.
