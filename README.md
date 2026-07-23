@@ -57,3 +57,26 @@ The idea is simple:
 
 **Space Complexity:** O(1)  
 - The dictionary contains only a fixed number of symbols.
+
+Day 4 - Longest Common Prefix
+
+## Problem
+Find the longest common prefix string among an array of strings.  
+Return `""` if no common prefix exists.
+
+
+## Approach
+- Compare characters of the first string with all other strings.
+- Stop when a mismatch is found.
+- Return the matched prefix.
+
+## Complexity
+
+- Time Complexity: `O(n * m)`
+- Space Complexity: `O(1)`
+
+## Language
+Python 3
+
+
+
