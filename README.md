@@ -59,7 +59,6 @@ The idea is simple:
 - The dictionary contains only a fixed number of symbols.
 
 Day 4 - Longest Common Prefix
-
 ## Problem
 Find the longest common prefix string among an array of strings.  
 Return `""` if no common prefix exists.
@@ -78,5 +77,21 @@ Return `""` if no common prefix exists.
 ## Language
 Python 3
 
+Day 5 - Valid Parentheses
+## Problem
+Given a string containing only the characters `(`, `)`, `{`, `}`, `[` and `]`, check whether the brackets are valid.
 
+A string is valid when:
 
+- Every opening bracket has a matching closing bracket.
+- Brackets are closed in the correct order.
+- Each closing bracket matches the same type of opening bracket.
+
+## Approach
+I used a **stack** to solve this problem.
+
+- When I find an opening bracket, I store it in the stack.
+- When I find a closing bracket, I check the last bracket in the stack.
+- If the brackets match, I remove it from the stack.
+- If they do not match, the string is invalid.
+- At the end, the stack should be empty for a valid string.
