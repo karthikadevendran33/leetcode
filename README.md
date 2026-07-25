@@ -95,3 +95,32 @@ I used a **stack** to solve this problem.
 - If the brackets match, I remove it from the stack.
 - If they do not match, the string is invalid.
 - At the end, the stack should be empty for a valid string.
+
+Day 6 - Merge Two Sorted List
+
+# Merge Two Sorted Lists
+## Problem 
+
+Given the heads of two sorted linked lists, merge them into a single sorted linked list and return its head.
+
+## Approach
+
+The solution uses an **iterative method** with a **dummy node**.
+
+1. Create a dummy node to act as the starting point.
+2. Compare the current nodes of both linked lists.
+3. Attach the smaller node to the merged list.
+4. Move the corresponding pointer forward.
+5. Continue until one list becomes empty.
+6. Attach the remaining nodes from the other list.
+
+## Time Complexity
+
+- **Time:** O(n + m)
+- **Space:** O(1)
+
+where:
+- `n` = number of nodes in the first list
+- `m` = number of nodes in the second list
+
+
