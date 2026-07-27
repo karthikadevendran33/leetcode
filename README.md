@@ -123,4 +123,27 @@ where:
 - `n` = number of nodes in the first list
 - `m` = number of nodes in the second list
 
+Day 7 - Remove Duplicates from Sorted Array
 
+##Problem
+Given a sorted integer array `nums`, remove the duplicate elements **in-place** such that each unique element appears only once. The relative order of the elements must remain unchanged.Return the number of unique elements (`k`). After the function executes, the first `k` positions of the array should contain the unique elements in sorted order.
+
+## How It Works
+
+- A pointer named `pos` keeps track of the position where the next unique element should be stored.
+- Traverse the array using a loop.
+- Compare the current element with the element at the `pos` index.
+- When a new unique element is found:
+  - Increment `pos`.
+  - Copy the unique element to `nums[pos]`.
+- After completing the traversal, the first `pos + 1` elements contain all unique values.
+
+## Algorithm
+
+1. Initialize `pos` to `0`.
+2. Iterate through the array from the first element to the last.
+3. Compare the current element with `nums[pos]`.
+4. If they are different:
+   - Increment `pos`.
+   - Store the current element at `nums[pos]`.
+5. Return `pos + 1`, which represents the number of unique elements.
