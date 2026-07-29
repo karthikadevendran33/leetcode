@@ -174,3 +174,25 @@ Since the array is already sorted:
 - Two Pointer Technique
 - In-place Modification
 - Sorted Array Traversal
+
+Day 9 - Remove Element
+
+## Problem Statement
+
+Given an integer array `nums` and an integer `val`, remove all occurrences of `val` from `nums` **in-place**.
+The order of the remaining elements may be changed.
+Return the number of elements `k` that are not equal to `val`.
+After removing the elements:
+- The first `k` elements of `nums` should contain the values that are not equal to `val`.
+- The remaining elements of the array do not matter.
+
+## Approach
+
+This solution uses an additional list to store the elements that should remain.
+
+### Steps:
+1. Create an empty list called `answer`.
+2. Traverse through the original array.
+3. Add only the elements that are different from `val` into `answer`.
+4. Copy the elements from `answer` back into the original `nums` array.
+5. Return the length of `answer`, which represents the number of remaining elements.
