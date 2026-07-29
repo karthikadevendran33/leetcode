@@ -147,3 +147,30 @@ Given a sorted integer array `nums`, remove the duplicate elements **in-place** 
    - Increment `pos`.
    - Store the current element at `nums[pos]`.
 5. Return `pos + 1`, which represents the number of unique elements.
+
+Day 8 - Remove Duplicate Sorted array
+
+## Problem Statement
+
+Given an integer array `nums` sorted in non-decreasing order, remove the duplicates **in-place** so that each unique element appears only once.
+
+The relative order of the elements should remain the same.
+
+Return the number of unique elements `k`. The first `k` elements of `nums` should contain the unique values in sorted order. The remaining elements can be ignored.
+
+## Approach: Two Pointer Technique
+
+This solution uses the **two-pointer approach**.
+- `read` pointer is used to scan through the entire array.
+- `write` pointer keeps track of the position where the next unique element should be placed.
+
+Since the array is already sorted:
+- Duplicate elements will always be next to each other.
+- We only need to compare the current element with the previous element.
+- When a new unique element is found, it is placed at the `write` position.
+## Key Concepts
+
+- Arrays
+- Two Pointer Technique
+- In-place Modification
+- Sorted Array Traversal
