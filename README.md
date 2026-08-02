@@ -196,3 +196,24 @@ This solution uses an additional list to store the elements that should remain.
 3. Add only the elements that are different from `val` into `answer`.
 4. Copy the elements from `answer` back into the original `nums` array.
 5. Return the length of `answer`, which represents the number of remaining elements.
+
+Day 10 - Index of String
+
+Problem
+Given two strings, haystack and needle, find the index where needle first appears in haystack. If needle is not present, return -1.
+pproach
+
+The solution uses a straightforward comparison method.
+
+First, compare the lengths of the two strings. If needle is longer than haystack, it is impossible to find a match, so return -1.
+Check every possible starting position in haystack.
+For each position, compare the characters of needle one by one.
+If every character matches, return the current starting index.
+If a mismatch occurs, move to the next starting position.
+If no match is found after checking all positions, return -1.
+
+Complexity Analysis
+Time Complexity: O((n - m + 1) × m)
+where n is the length of haystack and m is the length of needle.
+Space Complexity: O(1)
+The algorithm only uses a few variables and does not require any extra data structures.
