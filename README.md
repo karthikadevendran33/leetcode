@@ -217,3 +217,17 @@ Time Complexity: O((n - m + 1) × m)
 where n is the length of haystack and m is the length of needle.
 Space Complexity: O(1)
 The algorithm only uses a few variables and does not require any extra data structures.
+
+Day 11 - Insert String Position
+
+Problem Statement
+Given a sorted array of distinct integers nums and a target value target, return the index of the target if it exists in the array. If the target is not found, return the index where it should be inserted so that the array remains sorted.
+
+Approach
+1.Since the array is already sorted, Binary Search is the most efficient way to solve this problem.
+2.Start with two pointers, one at the beginning and one at the end of the array.
+3.Find the middle element.
+4.If the middle element is equal to the target, return its index.
+5.If the target is greater, continue searching in the right half.
+6.Otherwise, continue searching in the left half.
+7.When the search ends, the left pointer indicates the correct position where the target should be inserted.
